@@ -29,21 +29,58 @@ header {
     color: #666;
 }
 
-nav {
-    text-align: center;
-    margin-bottom: 30px;
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
 }
 
-nav a {
-    margin: 0 10px;
+.navbar-links {
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 1;
+}
+
+.navbar-links a {
+    color: #fff;
     text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    transition: color 0.3s ease;
+    padding: 10px;
+    transition: background-color 0.3s ease;
 }
 
-nav a:hover {
-    color: #000;
+.navbar-links a:hover {
+    background-color: #555;
+}
+
+.toggle-button {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    cursor: pointer;
+}
+
+.bar {
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    transition: transform 0.3s ease;
+}
+
+/* Toggle button animation */
+.toggle-button.active .bar:first-child {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.toggle-button.active .bar:last-child {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+.toggle-button.active .bar:nth-child(2) {
+    opacity: 0;
 }
 
 section {
