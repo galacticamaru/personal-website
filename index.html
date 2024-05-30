@@ -31,6 +31,12 @@
             margin-top: 10px;
             color: #666;
         }
+        header img {
+            max-width: 150px;
+            height: auto;
+            border-radius: 50%;
+            margin-top: 20px;
+        }
         nav {
             display: flex;
             justify-content: center;
@@ -108,6 +114,7 @@
     <div class="container">
         <header>
             <h1>Alan Hili</h1>
+            <img src="portrait.jpg" alt="Alan Hili">
             <p>Principal Product Manager</p>
             <p><a href="https://www.linkedin.com/in/alan-hili/" target="_blank">LinkedIn</a></p>
         </header>
@@ -174,7 +181,7 @@
         </section>
         <section id="contact">
             <h2>Contact</h2>
-            <form class="contact-form" action="https://formspree.io/f/xnqekaly" method="POST">
+            <form class="contact-form" action="https://formspree.io/f/{your_form_id}" method="POST">
                 <input type="text" name="name" placeholder="Your Name" required>
                 <input type="email" name="_replyto" placeholder="Your Email" required>
                 <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
@@ -189,7 +196,6 @@
                 </div>
                 <div class="blog">
                     <h3><a href="https://www.mindtheproduct.com/producttank/">Product Tank</a> where I spoke about <a href="https://www.reforge.com/">Reforge</a> Growth Series and applications of learnings</h3>
-                    <img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/df23e15a-5f1c-4a9d-97c8-976c3ca33121/Untitled.png" alt="Product Tank Talk">
                 </div>
                 <!-- Add more blogs as needed -->
             </div>
