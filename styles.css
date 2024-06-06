@@ -83,6 +83,22 @@ header {
     opacity: 0;
 }
 
+@media (max-width: 768px) {
+    .navbar-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+}
+
 section {
     margin-bottom: 40px;
 }
