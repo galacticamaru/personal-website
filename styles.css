@@ -179,3 +179,11 @@ h2 {
 .linkedin-link:hover {
     text-decoration: underline;
 }
+
+/* Game canvas styles */
+canvas {
+    display: block;
+    margin: 0 auto;
+    border: 1px solid #000;
+    background-color: #f9f9f9;
+}
