@@ -187,3 +187,18 @@ canvas {
     border: 1px solid #000;
     background-color: #f9f9f9;
 }
+
+.iframe-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+iframe {
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
