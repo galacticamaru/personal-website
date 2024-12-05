@@ -31,6 +31,24 @@
                 </iframe>
             </div>
         </section>
+        <section>
+    <h2>Share Your Feedback</h2>
+    <form id="feedback-form">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        
+        <label for="rating">How much did you like the prototype? (1-10):</label>
+        <input type="number" id="rating" name="rating" min="1" max="10" required>
+        
+        <label for="promotion">What did you think of the promotion?</label>
+        <textarea id="promotion" name="promotion" placeholder="Share your thoughts" rows="4" required></textarea>
+        
+        <button type="submit">Submit Feedback</button>
+    </form>
+</section>
         <footer>
             <p>&copy; 2024 Alan Hili | <a href="https://www.linkedin.com/in/alan-hili/" target="_blank" class="linkedin-link">LinkedIn</a></p>
         </footer>
